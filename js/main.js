@@ -87,9 +87,8 @@ document.getElementById('apply-code').addEventListener('click', function () {
     if (userPromoCode == 'stevekaku') {
         const discount = updateTotalWithPromoCode() * (20 / 100);
         document.getElementById('total-With-Promo').innerText = updateTotalWithPromoCode() - discount;
-        return 'You have got 20% Discount';
+        // return 'You have got 20% Discount';
     }
-    else {
-        return 'Your Code is wring';
-    }
+    InputFiled.value= '';
+
 })
